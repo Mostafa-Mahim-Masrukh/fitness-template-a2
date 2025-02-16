@@ -5,7 +5,29 @@
     font-style: normal;
   }
 
+  .montecarlo-regular {
+    font-family: "MonteCarlo", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
   /* shared-style   */
+.primary-button{
+padding: 15px 45px;
+border: none;
+border-radius: 40px;
+color: white;
+background-color: #E6533C;
+font-size: 1rem;
+font-weight: 400;
+}
+#download-app-btn{
+  margin-left: 15px;
+  background-color: transparent;
+  border: 1px solid white;
+}
+
 body{
     background-color: black;
 }
@@ -22,6 +44,10 @@ body{
 }
 .dark-color{
     color: #222222;
+}
+
+.white-color{
+  color: white;
 }
 
 .grey-color{
@@ -43,6 +69,8 @@ body{
   .nav-links>ul>p{
    list-style: none;
    margin-right: 50px;
+   margin-top: 10px;
+    margin-bottom: 10px;
   }
 
 .nav-links>ul{
@@ -65,3 +93,78 @@ body{
       padding: 10px 20px;
   }
 
+/* ---------------------banner style -------------------  */
+.banner-card-1{
+  width: 200px;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.1); /* Slightly visible white */
+  backdrop-filter: blur(15px); /* Blurry effect */
+  -webkit-backdrop-filter: blur(15px); /* Safari support */
+  border-radius: 15px; /* Smooth edges */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle white border */
+  padding: 10px;
+  color: white; /* White text */
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); /* Soft glow effect */
+  position: absolute;
+  top: 25%;
+  right: 10%;
+
+}
+.banner-card-1 h1 {
+  margin: 0px 0px 5px 0;
+}
+.banner-card-slogan{
+  margin: 0px;
+  font-size: .8rem;
+  font-weight: 200;
+}
+
+.banner-card-2{
+  position: absolute;
+  top: 65%;
+  right: 31%;
+  align-items: center;
+  width: 200px;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.1); /* Slightly visible white */
+  backdrop-filter: blur(15px); /* Blurry effect */
+  -webkit-backdrop-filter: blur(15px); /* Safari support */
+  border-radius: 15px; /* Smooth edges */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle white border */
+  padding: 10px;
+  color: white; /* White text */
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); /* Soft glow effect */
+}
+.banner-card-2 h1 {
+  margin: 0px 0px 5px 0;
+}
+.banner-card-slogan{
+  margin: 0px;
+  font-size: .8rem;
+  font-weight: 200;
+}
+
+.circle{
+  background-color: #E6533C;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.banner-image{
+  position: relative;
+}
+
+
+.banner-title{
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+.banner-description{
+  font-weight: 200;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
