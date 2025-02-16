@@ -1,0 +1,67 @@
+.inter-primary-font {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+  }
+
+  /* shared-style   */
+body{
+    background-color: black;
+}
+  .section-width{
+    max-width: 1048px;
+    margin: 0 auto;
+  }
+
+  .display-flex{
+    display: flex;
+  }
+.primary-color {
+    color: #E6533C;
+}
+.dark-color{
+    color: #222222;
+}
+
+.grey-color{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+  /* ----------------- header style ----------------  */
+
+  .brand-text{
+    font-style: italic;
+    font-weight: 800;
+    font-size: 2rem;
+  }
+   .navbar-container {
+    justify-content: space-between;
+    align-items: center;
+  } 
+  .nav-links>ul>p{
+   list-style: none;
+   margin-right: 50px;
+  }
+
+.nav-links>ul{
+    border: 1px solid #ffffff2c;
+    border-radius: 20px;
+}
+
+  .nav-links>ul>p>a{
+    text-decoration: none;
+    font-size: .8rem;
+    font-weight: 300;
+    color: white;
+    width: 20px;
+    border-radius: 20px;
+    /* padding: 20px; */
+  }
+
+  #home-button{
+      background: #E6533C;
+      padding: 10px 20px;
+  }
+
