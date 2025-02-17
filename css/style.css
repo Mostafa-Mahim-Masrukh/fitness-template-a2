@@ -13,6 +13,25 @@
   
 
   /* shared-style   */
+  section{
+    margin-top: 100px;
+  }
+.section-details{
+ text-align: center;
+ margin: 60px;
+}
+  .section-title{
+    color: white;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+  .section-description{
+    color: rgba(255, 255, 255, 0.5) ;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 10px;
+  }
 .primary-button{
 padding: 15px 45px;
 border: none;
@@ -34,6 +53,11 @@ body{
   .section-width{
     max-width: 1048px;
     margin: 0 auto;
+  }
+  
+  section{
+    max-width: 1048px;
+    margin: 100px auto;
   }
 
   .display-flex{
@@ -177,11 +201,37 @@ body{
   margin-bottom: 20px;
 }
 
+/* -------------------------change your habits--------------------    */
+.habits{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+.habit{
+  text-align: center;
+}
+.habit-image{
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.habit_title{
+  font-size: 1rem;
+  font-weight: 600;
+}
+.habit-slogan{
+  font-size: .8rem;
+  font-weight: 200;
+}
 
 /* -----------media query for mobile phone-----------------   */
 @media (max-width: 576px) {
-.nav-links ul,.banner-container{
+.nav-links ul,.banner-container,.habits{
   flex-direction: column;
+}
+.habits{
+  grid-template-columns: repeat(1,1fr);
 }
 
 body{
