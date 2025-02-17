@@ -92,10 +92,16 @@ body{
       background: #E6533C;
       padding: 10px 20px;
   }
-
+  .menu-icon {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+  }
+  .menu-icon-container{display: none;}
 /* ---------------------banner style -------------------  */
 .banner-card-1{
-  width: 200px;
+  width: 140px;
   height: 70px;
   background: rgba(255, 255, 255, 0.1); /* Slightly visible white */
   backdrop-filter: blur(15px); /* Blurry effect */
@@ -107,9 +113,8 @@ body{
   text-align: center;
   box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); /* Soft glow effect */
   position: absolute;
-  top: 25%;
-  right: 10%;
-
+  top: 16%;
+  right: 13%;
 }
 .banner-card-1 h1 {
   margin: 0px 0px 5px 0;
@@ -121,11 +126,12 @@ body{
 }
 
 .banner-card-2{
+  justify-content: center;
   position: absolute;
   top: 65%;
   right: 31%;
   align-items: center;
-  width: 200px;
+  width: 140px;
   height: 70px;
   background: rgba(255, 255, 255, 0.1); /* Slightly visible white */
   backdrop-filter: blur(15px); /* Blurry effect */
@@ -139,6 +145,7 @@ body{
 }
 .banner-card-2 h1 {
   margin: 0px 0px 5px 0;
+
 }
 .banner-card-slogan{
   margin: 0px;
@@ -156,6 +163,7 @@ body{
 
 .banner-image{
   position: relative;
+  width: 100%;
 }
 
 
@@ -167,4 +175,35 @@ body{
   font-weight: 200;
   margin-top: 0px;
   margin-bottom: 20px;
+}
+
+
+/* -----------media query for mobile phone-----------------   */
+@media (max-width: 576px) {
+.nav-links ul,.banner-container{
+  flex-direction: column;
+}
+
+body{
+  margin: 10px 20px;
+}
+
+/* ------hidden the menu ----------------- */
+.nav-links {
+  display: none;
+}
+.menu-icon-container{
+  display: block;
+}
+.banner-buttons {
+  display: flex;
+}
+.banner-card-1{
+  top: 70%;
+  right: 6%;
+}
+.banner-card-2{
+  top: 104%;
+  right: 54%;
+}
 }
