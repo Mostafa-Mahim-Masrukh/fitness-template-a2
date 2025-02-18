@@ -397,11 +397,84 @@ input[type=text] {
 
 
 
+/* -------------product details ---------------------------   */
+.related-products-title{
+  font-size: 2.5rem;
+  text-align: center;
+}
+.products{
+  display: grid;
+  column-gap: 20px;
+  row-gap: 20px;
+  grid-template-columns: repeat(3,1fr);
+  justify-items: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.product-details p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.product-details h1{
+  font-size: 1.2rem;
+}
+.product-details{
+ text-align: center;
+}
 
+.single-product{
+  width: 80%;
+}
+.single-product img{
+  width: 100%;
+  height: 280px;
+}
 
+#black-white{
 
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 
+}
 
+/* ---------------footer- section styles-----------------------  */
+.footer-container{
+  background-color: #222222;
+
+}
+
+.footer-brand-details{
+  width: 100%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.footer-brand-description{
+  font-size: .8rem;
+  font-weight: 300;
+}
+.footer-menu a{
+  text-decoration: none;
+  color: white;
+  font-size: .9rem;
+  font-weight: 300;
+
+}
+.footer-adress-area p{
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.copyright{
+  font-size: .7rem;
+  font-weight: 400;
+  text-align: center;
+}
 
 
 
@@ -465,6 +538,9 @@ body{
   margin-top: 20px;
 }
 .teams{
+  grid-template-columns: repeat(1,1fr);
+}
+.products,.footer-brand-details{
   grid-template-columns: repeat(1,1fr);
 }
 }
