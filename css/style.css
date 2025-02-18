@@ -256,14 +256,109 @@ margin-top: 20px;
   font-weight: 200;
   margin-bottom: 20px;
 }
+/* ---------------------exercises------------------ */
+
+.row{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 3px;
+  
+}
+.row img{
+  width: 100%;
+  height: 200px;
+}
+.exercise2 {
+  grid-column: span 2; /* Makes the second image span two columns */
+}
+.exercise4 {
+  grid-column: span 2; /* Makes the second image span two columns */
+}
+.exercise1{
+  background-color: linear-gradient(rgba(0, 128, 0, 0.5), rgba(0, 128, 0, 0.5));
+}
+
+
+/* -------------bmi calculator-------------------------    */
+.bmi-container{
+  background-color: #222222;
+}
+
+.table td{
+  color: rgba(255, 255, 255, 0.5) ;
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+}
+.chart-title{
+  font-size: 1.5rem;
+}
+table, th, td {
+  border: 1px solid rgba(255, 255, 255, 0.2) ;
+  padding: 8px;
+}
+.calculator-description{
+  font-size: 1rem;
+  font-weight: 300;
+}
+.bmi-container {
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+.chart{
+  margin-right: 100px;
+}
+
+input[type=text] {
+ background-color: rgba(255, 255, 255, 0.1);
+ border: none;
+ border-radius: 10px;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.form{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 10px;
+}
+
+.factor{
+  grid-column: span 2;
+}
+
+
+
+
+
 
 /* -----------media query for mobile phone-----------------   */
 @media (max-width: 576px) {
-.nav-links ul,.banner-container,.run-extra-mile{
+.nav-links ul,.banner-container,.run-extra-mile,.bmi-container {
   flex-direction: column;
 }
 .habits{
   grid-template-columns: repeat(1,1fr);
+}
+
+.row{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+
+  .exercise2 {
+    grid-column: span 1; /* Makes the second image span two columns */
+  }
+  .exercise4 {
+    grid-column: span 1; /* Makes the second image span two columns */
+  }
+}
+.row img{
+  width: 100%;
+  height: 100%;
 }
 
 body{
